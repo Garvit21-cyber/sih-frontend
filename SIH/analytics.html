@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIRMAAN AI - Risk Analytics | Government of India</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/analytics.css">
+</head>
+<body>
+
+  <div class="dashboard-shell-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="app-sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-brand-icon"><i class="fa-solid fa-city"></i></div>
+        <div class="sidebar-brand-text">
+          <h2>NIRMAAN AI</h2>
+          <p>Infrastructure Intelligence</p>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a class="nav-item" href="dashboard.html">
+          <div class="nav-item-left"><i class="fa-solid fa-house"></i> <span>Dashboard</span></div>
+        </a>
+        <a class="nav-item" href="projects.html">
+          <div class="nav-item-left"><i class="fa-solid fa-folder"></i> <span>Projects</span></div>
+        </a>
+        <a class="nav-item active" href="analytics.html">
+          <div class="nav-item-left"><i class="fa-solid fa-chart-simple"></i> <span>Analytics</span></div>
+        </a>
+        <a class="nav-item" href="alerts.html">
+          <div class="nav-item-left"><i class="fa-solid fa-bell"></i> <span>Alerts</span></div>
+          <span class="nav-badge">3</span>
+        </a>
+        <a class="nav-item" href="ai-assistant.html">
+          <div class="nav-item-left"><i class="fa-solid fa-robot"></i> <span>AI Assistant</span></div>
+        </a>
+        <a class="nav-item" href="settings.html">
+          <div class="nav-item-left"><i class="fa-solid fa-gear"></i> <span>Settings</span></div>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div style="font-size: 0.7rem; color: #94a3b8; margin-bottom: 0.5rem;">Building a Safer, Stronger Tomorrow</div>
+        <div class="sidebar-gov-footer">
+          <i class="fa-solid fa-landmark"></i>
+          <span>Government of India</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="app-main-content">
+      <header class="app-topbar">
+        <div class="topbar-search">
+          <i class="fa-solid fa-magnifying-glass topbar-search-icon"></i>
+          <input type="text" placeholder="Search projects, states, sectors...">
+        </div>
+
+        <div class="topbar-right">
+          <a class="notification-btn" href="alerts.html">
+            <i class="fa-regular fa-bell"></i>
+            <span class="notification-badge-dot">3</span>
+          </a>
+
+          <div class="user-profile-badge" id="profile-dropdown-btn">
+            <div class="profile-avatar">O</div>
+            <div class="profile-details">
+              <h4>Officer</h4>
+              <p>Government Official</p>
+            </div>
+            <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; color: var(--text-muted);"></i>
+          </div>
+        </div>
+      </header>
+
+      <div class="page-content-area">
+        <div class="analytics-layout">
+          <div>
+            <h1 style="font-size: 1.4rem; font-weight: 800;">Risk Analytics</h1>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Comprehensive analytics, risk forecasting, cost overruns, and sector performance metrics.</p>
+          </div>
+
+          <div class="analytics-grid-2col">
+            <div class="analytics-card">
+              <div class="analytics-card-title">Risk Distribution Breakdown</div>
+              <div class="donut-wrapper" id="analytics-donut-container"></div>
+            </div>
+
+            <div class="analytics-card">
+              <div class="analytics-card-title">Key Risk Driver Analysis</div>
+              <div style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">
+                <p>• <strong>Land Acquisition Delays</strong> account for 42% of total schedule overruns in Highway & Rail sectors.</p>
+                <p style="margin-top: 0.5rem;">• <strong>Material Inflation</strong> led to an average cost increase of 14.2% across Energy projects in Q2.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/charts.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/analytics.js"></script>
+</body>
+</html>

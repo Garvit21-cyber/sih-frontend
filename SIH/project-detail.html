@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIRMAAN AI - Project Inspection Detail | Government of India</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/projects.css">
+</head>
+<body>
+
+  <div class="dashboard-shell-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="app-sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-brand-icon"><i class="fa-solid fa-city"></i></div>
+        <div class="sidebar-brand-text">
+          <h2>NIRMAAN AI</h2>
+          <p>Infrastructure Intelligence</p>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a class="nav-item" href="dashboard.html">
+          <div class="nav-item-left"><i class="fa-solid fa-house"></i> <span>Dashboard</span></div>
+        </a>
+        <a class="nav-item active" href="projects.html">
+          <div class="nav-item-left"><i class="fa-solid fa-folder"></i> <span>Projects</span></div>
+        </a>
+        <a class="nav-item" href="analytics.html">
+          <div class="nav-item-left"><i class="fa-solid fa-chart-simple"></i> <span>Analytics</span></div>
+        </a>
+        <a class="nav-item" href="alerts.html">
+          <div class="nav-item-left"><i class="fa-solid fa-bell"></i> <span>Alerts</span></div>
+          <span class="nav-badge">3</span>
+        </a>
+        <a class="nav-item" href="ai-assistant.html">
+          <div class="nav-item-left"><i class="fa-solid fa-robot"></i> <span>AI Assistant</span></div>
+        </a>
+        <a class="nav-item" href="settings.html">
+          <div class="nav-item-left"><i class="fa-solid fa-gear"></i> <span>Settings</span></div>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div style="font-size: 0.7rem; color: #94a3b8; margin-bottom: 0.5rem;">Building a Safer, Stronger Tomorrow</div>
+        <div class="sidebar-gov-footer">
+          <i class="fa-solid fa-landmark"></i>
+          <span>Government of India</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="app-main-content">
+      <header class="app-topbar">
+        <div class="topbar-search">
+          <i class="fa-solid fa-magnifying-glass topbar-search-icon"></i>
+          <input type="text" placeholder="Search projects, states, sectors...">
+        </div>
+
+        <div class="topbar-right">
+          <a class="notification-btn" href="alerts.html">
+            <i class="fa-regular fa-bell"></i>
+            <span class="notification-badge-dot">3</span>
+          </a>
+
+          <div class="user-profile-badge" id="profile-dropdown-btn">
+            <div class="profile-avatar">O</div>
+            <div class="profile-details">
+              <h4>Officer</h4>
+              <p>Government Official</p>
+            </div>
+            <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; color: var(--text-muted);"></i>
+          </div>
+        </div>
+      </header>
+
+      <div class="page-content-area">
+        <div class="project-detail-layout">
+          <div class="detail-hero-banner">
+            <div class="detail-header-left">
+              <h1 id="detail-project-name">Highway Expansion Project</h1>
+              <div class="detail-chips-row">
+                <span class="chip-tag" id="detail-project-state">Rajasthan</span>
+                <span class="chip-tag" id="detail-project-sector">Roads</span>
+                <span class="status-badge delayed">Delayed</span>
+              </div>
+            </div>
+            <a class="btn-action-sm" href="projects.html"><i class="fa-solid fa-arrow-left"></i> Back to Projects</a>
+          </div>
+
+          <div class="detail-metrics-grid">
+            <div class="detail-gauge-card">
+              <div style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted);">Overall Risk Score</div>
+              <div class="gauge-val" id="detail-overall-risk">84%</div>
+              <div style="font-size: 0.75rem; color: #ef4444; font-weight: 700;">Critical Risk Threshold Exceeded</div>
+            </div>
+
+            <div class="detail-gauge-card">
+              <div style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted);">Delay Risk</div>
+              <div class="gauge-val" style="color: #f59e0b;" id="detail-delay-risk">82%</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">62 Days Behind Schedule</div>
+            </div>
+
+            <div class="detail-gauge-card">
+              <div style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted);">Cost Risk</div>
+              <div class="gauge-val" style="color: #8b5cf6;" id="detail-cost-risk">68%</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Budget Variance Detected</div>
+            </div>
+          </div>
+
+          <div class="dashboard-card" style="background: white; border: 1px solid var(--border-color); border-radius: 16px; padding: 1.25rem;">
+            <div style="font-size: 0.95rem; font-weight: 700;">Project Overview & Financials</div>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 1rem; font-size: 0.85rem;">
+              <div><strong style="color: var(--text-muted);">Approved Budget:</strong> <p id="detail-approved-budget" style="font-size: 1.1rem; font-weight: 800;">₹2,450 Cr</p></div>
+              <div><strong style="color: var(--text-muted);">Spent Budget:</strong> <p id="detail-spent-budget" style="font-size: 1.1rem; font-weight: 800;">₹1,680 Cr</p></div>
+              <div><strong style="color: var(--text-muted);">Contractor:</strong> <p id="detail-contractor">M/s InfraTech Pvt Ltd</p></div>
+              <div><strong style="color: var(--text-muted);">Nodal Agency:</strong> <p id="detail-agency">NHAI</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const projId = urlParams.get('id') || 'PRJ-1001';
+      const project = window.NIRMAAN_DATA.projects.find(p => p.id === projId) || window.NIRMAAN_DATA.projects[0];
+
+      document.getElementById('detail-project-name').innerText = project.name;
+      document.getElementById('detail-project-state').innerText = project.state;
+      document.getElementById('detail-project-sector').innerText = project.sector;
+      document.getElementById('detail-overall-risk').innerText = `${project.riskScore}%`;
+      document.getElementById('detail-delay-risk').innerText = `${project.delayRisk}%`;
+      document.getElementById('detail-cost-risk').innerText = `${project.costRisk}%`;
+      document.getElementById('detail-approved-budget').innerText = project.approvedBudget;
+      document.getElementById('detail-spent-budget').innerText = project.spentBudget;
+      document.getElementById('detail-contractor').innerText = project.contractor;
+      document.getElementById('detail-agency').innerText = project.agency;
+    });
+  </script>
+</body>
+</html>

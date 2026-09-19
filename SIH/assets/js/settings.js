@@ -1,0 +1,41 @@
+/* 
+   NIRMAAN AI - Settings Logic & Theme Manager
+*/
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuItems = document.querySelectorAll('.settings-sub-sidebar .settings-menu-item');
+  menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+      menuItems.forEach(m => m.classList.remove('active'));
+      item.classList.add('active');
+    });
+  });
+
+  const themeControl = document.getElementById('theme-mode-switcher');
+  if (themeControl) {
+    themeControl.querySelectorAll('.theme-option-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        themeControl.querySelectorAll('.theme-option-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const theme = btn.getAttribute('data-theme');
+        setTheme(theme);
+      });
+    });
+  }
+
+  document.getElementById('btn-sign-out')?.addEventListener('click', () => {
+    if (confirm('Sign out from NIRMAAN AI Portal?')) {
+      window.location.href = 'login.html';
+    }
+  });
+});
+
+function setTheme(themeMode) {
+  const html = document.documentElement;
+  if (themeMode === 'system') {
+    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    html.setAttribute('data-theme', isDark ? 'dark' : 'light');
+  } else {
+    html.setAttribute('data-theme', themeMode);
+  }
+}

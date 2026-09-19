@@ -1,0 +1,396 @@
+/* 
+   NIRMAAN AI - Pixel Perfect Login Page Stylesheet
+   Directly matching Image 1 screenshot reference
+*/
+
+.login-body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #081d33;
+}
+
+.login-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ==========================================
+   LEFT HERO SECTION
+   ========================================== */
+.login-left-section {
+  flex: 1.25;
+  position: relative;
+  background: linear-gradient(135deg, rgba(8, 29, 51, 0.94) 0%, rgba(11, 38, 66, 0.88) 100%),
+              url('../images/nirmaan_hero.jpg') center/cover no-repeat;
+  color: #ffffff;
+  padding: 2.75rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  clip-path: polygon(0 0, 100% 0, 93% 100%, 0 100%);
+  z-index: 2;
+  box-shadow: 12px 0 35px rgba(0, 0, 0, 0.35);
+}
+
+.top-left-gov {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.ashoka-emblem-small {
+  height: 42px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.gov-text-block .gov-heading {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #f1f5f9;
+}
+
+.gov-text-block .gov-subheading {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #cbd5e1;
+}
+
+.gov-text-block .gov-motto {
+  font-size: 0.65rem;
+  font-style: italic;
+  color: #94a3b8;
+}
+
+.hero-center-content {
+  max-width: 590px;
+  margin-top: -1rem;
+}
+
+.nirmaan-brand-header {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+  margin-bottom: 1.5rem;
+}
+
+.nirmaan-logo-3d {
+  width: 58px;
+  height: 58px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 114, 255, 0.45);
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nirmaan-title-block h1 {
+  font-size: 2.35rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.nirmaan-title-block p {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #94a3b8;
+  letter-spacing: 0.5px;
+  margin-top: 3px;
+}
+
+.nirmaan-tagline-desc {
+  font-size: 1.02rem;
+  color: #e2e8f0;
+  line-height: 1.55;
+  margin-bottom: 2.25rem;
+  font-weight: 400;
+}
+
+/* 4 Feature Cards Grid */
+.features-4col-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.85rem;
+}
+
+.feature-card-item {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  padding: 1.1rem 0.9rem;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.feature-card-item:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.feature-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  color: #60a5fa;
+  margin-bottom: 0.75rem;
+}
+
+.feature-card-item h4 {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+  line-height: 1.25;
+}
+
+.feature-card-item p {
+  font-size: 0.72rem;
+  color: #cbd5e1;
+  line-height: 1.35;
+}
+
+.left-bottom-motto {
+  font-size: 0.7rem;
+  letter-spacing: 1.8px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.45);
+  text-transform: uppercase;
+}
+
+/* ==========================================
+   RIGHT LOGIN SECTION
+   ========================================== */
+.login-right-section {
+  flex: 0.85;
+  background-color: #f4f6fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.25rem 3rem;
+  position: relative;
+}
+
+.top-right-viksit-container {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.viksit-text-group {
+  text-align: right;
+  line-height: 1;
+}
+
+.viksit-title {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #0b2341;
+}
+
+.viksit-year {
+  font-size: 0.88rem;
+  font-weight: 900;
+  color: #0b2341;
+}
+
+.viksit-tricolor-curve {
+  width: 32px;
+  height: 16px;
+}
+
+/* Card Styling */
+.login-box-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.05);
+  padding: 2.5rem 2.25rem;
+  width: 100%;
+  max-width: 430px;
+}
+
+.card-emblem-header {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.ashoka-emblem-card {
+  width: 48px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.card-nirmaan-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0b2341;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.card-nirmaan-sub {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.welcome-heading-block {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.welcome-heading-block h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 3px;
+}
+
+.welcome-heading-block p {
+  font-size: 0.82rem;
+  color: #64748b;
+}
+
+.form-field-wrapper {
+  margin-bottom: 1.15rem;
+  text-align: left;
+}
+
+.form-field-wrapper label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.4rem;
+}
+
+.input-icon-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.field-left-icon {
+  position: absolute;
+  left: 0.95rem;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  pointer-events: none;
+}
+
+.field-right-icon {
+  position: absolute;
+  right: 0.95rem;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 0.72rem 1rem 0.72rem 2.6rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  color: #0f172a;
+  background-color: #ffffff;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.custom-input:focus {
+  border-color: #1a56db;
+  box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.12);
+}
+
+.form-extra-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.remember-check {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.remember-check input {
+  accent-color: #1a56db;
+}
+
+.forgot-link {
+  color: #1a56db;
+  font-weight: 600;
+}
+
+.btn-signin-submit {
+  width: 100%;
+  padding: 0.82rem;
+  background-color: #0b2341;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.92rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 12px rgba(11, 35, 65, 0.3);
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.btn-signin-submit:hover {
+  background-color: #16385c;
+  transform: translateY(-1px);
+}
+
+.card-security-footer {
+  margin-top: 1.75rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid #f1f5f9;
+  text-align: center;
+}
+
+.secure-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  font-size: 0.73rem;
+  font-weight: 700;
+  color: #475569;
+
+}
+
+.secure-gov-text {
+  font-size: 0.68rem;
+  color: #94a3b8;
+  margin-top: 2px;
+}

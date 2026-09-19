@@ -1,0 +1,117 @@
+/* 
+   NIRMAAN AI - Alert Center Stylesheet (Screen 6)
+*/
+
+.alert-center-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: 100%;
+}
+
+.alert-main-container {
+  display: flex;
+  gap: 1.25rem;
+  flex: 1;
+}
+
+.alert-feed-column {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feed-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 0.5rem 0.85rem;
+}
+
+.filter-tabs {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 0.45rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.tab-btn.active {
+  background-color: var(--color-accent-light);
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.alert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.alert-item-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.15rem 1.35rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-left: 4px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.alert-item-card.critical { border-left-color: #ef4444; }
+.alert-item-card.warning  { border-left-color: #f59e0b; }
+.alert-item-card.info     { border-left-color: #3b82f6; }
+.alert-item-card.resolved { border-left-color: #10b981; }
+
+.alert-item-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1.5;
+}
+
+.alert-type-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.alert-type-icon.critical { background-color: #ef4444; color: white; }
+.alert-type-icon.warning  { background-color: #f59e0b; color: white; }
+.alert-type-icon.info     { background-color: #3b82f6; color: white; }
+.alert-type-icon.resolved { background-color: #10b981; color: white; }
+
+.alert-sidebar-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar-panel-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+}

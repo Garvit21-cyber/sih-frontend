@@ -1,0 +1,153 @@
+/* 
+   NIRMAAN AI - Reusable UI Components Stylesheet
+*/
+
+/* Metrics Summary Card Bar */
+.metrics-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.metric-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.metric-icon-box {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  flex-shrink: 0;
+}
+
+.metric-icon-box.total    { background-color: #eff6ff; color: #1a56db; }
+.metric-icon-box.critical { background-color: #fee2e2; color: #ef4444; }
+.metric-icon-box.warning  { background-color: #fef3c7; color: #d97706; }
+.metric-icon-box.delay    { background-color: #dbeafe; color: #2563eb; }
+.metric-icon-box.cost     { background-color: #f3e8ff; color: #9333ea; }
+.metric-icon-box.resolved { background-color: #d1fae5; color: #059669; }
+
+.metric-info h4 {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.metric-count {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.1;
+  margin: 2px 0;
+}
+
+.metric-sub {
+  font-size: 0.7rem;
+  color: var(--text-light);
+}
+
+/* Data Tables */
+.data-table-container {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.83rem;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: var(--bg-app);
+  color: var(--text-muted);
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+.data-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border-color-subtle);
+  color: var(--text-main);
+  vertical-align: middle;
+}
+
+.data-table tr:hover {
+  background-color: var(--border-color-subtle);
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 3px 9px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.status-badge.delayed { background-color: #fee2e2; color: #ef4444; }
+.status-badge.ongoing { background-color: #d1fae5; color: #059669; }
+.status-badge.ontrack { background-color: #eff6ff; color: #1a56db; }
+
+/* Progress Bar Component */
+.progress-bar-wrap {
+  width: 100%;
+  height: 8px;
+  background-color: var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  background-color: var(--color-accent);
+  transition: width 0.5s ease;
+}
+
+.progress-bar-fill.high-risk { background-color: #ef4444; }
+.progress-bar-fill.medium-risk { background-color: #f59e0b; }
+.progress-bar-fill.low-risk { background-color: #10b981; }
+
+/* Buttons */
+.btn-action-sm {
+  padding: 0.35rem 0.75rem;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-action-sm:hover {
+  background-color: var(--color-accent);
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIRMAAN AI - Alert Center | Government of India</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/alerts.css">
+</head>
+<body>
+
+  <div class="dashboard-shell-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="app-sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-brand-icon"><i class="fa-solid fa-city"></i></div>
+        <div class="sidebar-brand-text">
+          <h2>NIRMAAN AI</h2>
+          <p>Infrastructure Intelligence</p>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a class="nav-item" href="dashboard.html">
+          <div class="nav-item-left"><i class="fa-solid fa-house"></i> <span>Dashboard</span></div>
+        </a>
+        <a class="nav-item" href="projects.html">
+          <div class="nav-item-left"><i class="fa-solid fa-folder"></i> <span>Projects</span></div>
+        </a>
+        <a class="nav-item" href="analytics.html">
+          <div class="nav-item-left"><i class="fa-solid fa-chart-simple"></i> <span>Analytics</span></div>
+        </a>
+        <a class="nav-item active" href="alerts.html">
+          <div class="nav-item-left"><i class="fa-solid fa-bell"></i> <span>Alerts</span></div>
+          <span class="nav-badge">3</span>
+        </a>
+        <a class="nav-item" href="ai-assistant.html">
+          <div class="nav-item-left"><i class="fa-solid fa-robot"></i> <span>AI Assistant</span></div>
+        </a>
+        <a class="nav-item" href="settings.html">
+          <div class="nav-item-left"><i class="fa-solid fa-gear"></i> <span>Settings</span></div>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div style="font-size: 0.7rem; color: #94a3b8; margin-bottom: 0.5rem;">Building a Safer, Stronger Tomorrow</div>
+        <div class="sidebar-gov-footer">
+          <i class="fa-solid fa-landmark"></i>
+          <span>Government of India</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="app-main-content">
+      <header class="app-topbar">
+        <div class="topbar-search">
+          <i class="fa-solid fa-magnifying-glass topbar-search-icon"></i>
+          <input type="text" placeholder="Search projects, states, sectors...">
+        </div>
+
+        <div class="topbar-right">
+          <a class="notification-btn" href="alerts.html">
+            <i class="fa-regular fa-bell"></i>
+            <span class="notification-badge-dot">3</span>
+          </a>
+
+          <div class="user-profile-badge" id="profile-dropdown-btn">
+            <div class="profile-avatar">O</div>
+            <div class="profile-details">
+              <h4>Officer</h4>
+              <p>Government Official</p>
+            </div>
+            <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; color: var(--text-muted);"></i>
+          </div>
+        </div>
+      </header>
+
+      <div class="page-content-area">
+        <div class="alert-center-layout">
+          <div class="page-header-row" style="display: flex; gap: 1rem; align-items: center;">
+            <div class="page-header-icon" style="width: 44px; height: 44px; background: #fee2e2; color: #ef4444; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.35rem;"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <div class="page-header-text">
+              <h1 style="font-size: 1.4rem; font-weight: 800;">Alert Center</h1>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Stay informed about critical risks, delays and potential issues in infrastructure projects.</p>
+            </div>
+          </div>
+
+          <div class="alert-main-container">
+            <div class="alert-feed-column">
+              <div class="feed-filter-bar">
+                <div class="filter-tabs" id="alert-tabs-container">
+                  <button class="tab-btn active" data-tab="all">All Alerts (41)</button>
+                  <button class="tab-btn" data-tab="critical">Critical (7)</button>
+                  <button class="tab-btn" data-tab="warning">Warning (12)</button>
+                  <button class="tab-btn" data-tab="delay">Delay Risk (18)</button>
+                  <button class="tab-btn" data-tab="cost">Cost Risk (9)</button>
+                  <button class="tab-btn" data-tab="resolved">Resolved (5)</button>
+                </div>
+
+                <select class="select-control" id="state-quick-filter" style="padding: 0.45rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                  <option value="all">All States</option>
+                  <option value="Rajasthan">Rajasthan</option>
+                  <option value="Bihar">Bihar</option>
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+                </select>
+              </div>
+
+              <div class="alert-list" id="alert-feed-list"></div>
+            </div>
+
+            <div class="alert-sidebar-column">
+              <div class="sidebar-panel-card">
+                <div style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.75rem;"><i class="fa-solid fa-robot" style="color: var(--color-accent);"></i> AI Insights</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">
+                  Focus on reducing delay risk in <strong>Rajasthan</strong> and cost overrun risk in <strong>Bihar</strong>.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/alerts.js"></script>
+</body>
+</html>

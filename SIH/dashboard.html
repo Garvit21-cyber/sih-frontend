@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIRMAAN AI - Dashboard Overview | Government of India</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+
+  <div class="dashboard-shell-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="app-sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-brand-icon"><i class="fa-solid fa-city"></i></div>
+        <div class="sidebar-brand-text">
+          <h2>NIRMAAN AI</h2>
+          <p>Infrastructure Intelligence</p>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a class="nav-item active" href="dashboard.html">
+          <div class="nav-item-left"><i class="fa-solid fa-house"></i> <span>Dashboard</span></div>
+        </a>
+        <a class="nav-item" href="projects.html">
+          <div class="nav-item-left"><i class="fa-solid fa-folder"></i> <span>Projects</span></div>
+        </a>
+        <a class="nav-item" href="analytics.html">
+          <div class="nav-item-left"><i class="fa-solid fa-chart-simple"></i> <span>Analytics</span></div>
+        </a>
+        <a class="nav-item" href="alerts.html">
+          <div class="nav-item-left"><i class="fa-solid fa-bell"></i> <span>Alerts</span></div>
+          <span class="nav-badge">3</span>
+        </a>
+        <a class="nav-item" href="ai-assistant.html">
+          <div class="nav-item-left"><i class="fa-solid fa-robot"></i> <span>AI Assistant</span></div>
+        </a>
+        <a class="nav-item" href="settings.html">
+          <div class="nav-item-left"><i class="fa-solid fa-gear"></i> <span>Settings</span></div>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div style="font-size: 0.7rem; color: #94a3b8; margin-bottom: 0.5rem;">Building a Safer, Stronger Tomorrow</div>
+        <div class="sidebar-gov-footer">
+          <i class="fa-solid fa-landmark"></i>
+          <span>Government of India</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="app-main-content">
+      <header class="app-topbar">
+        <div class="topbar-search">
+          <i class="fa-solid fa-magnifying-glass topbar-search-icon"></i>
+          <input type="text" placeholder="Search projects, states, sectors...">
+        </div>
+
+        <div class="topbar-right">
+          <a class="notification-btn" href="alerts.html">
+            <i class="fa-regular fa-bell"></i>
+            <span class="notification-badge-dot">3</span>
+          </a>
+
+          <div class="user-profile-badge" id="profile-dropdown-btn">
+            <div class="profile-avatar">O</div>
+            <div class="profile-details">
+              <h4>Officer</h4>
+              <p>Government Official</p>
+            </div>
+            <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; color: var(--text-muted);"></i>
+          </div>
+        </div>
+      </header>
+
+      <div class="page-content-area">
+        <div class="dashboard-layout">
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div>
+              <h1 style="font-size: 1.4rem; font-weight: 800;">Welcome Back, Officer</h1>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Monitor and manage all 1,981 infrastructure projects across India.</p>
+            </div>
+            <div style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted);"><i class="fa-regular fa-calendar"></i> 13 Sep 2026</div>
+          </div>
+
+          <!-- Top Metrics Cards -->
+          <div class="metrics-summary-grid">
+            <div class="metric-card">
+              <div class="metric-icon-box total"><i class="fa-solid fa-layer-group"></i></div>
+              <div class="metric-info">
+                <h4>Total Projects</h4>
+                <div class="metric-count">1,981</div>
+                <div class="metric-sub">+12 this month</div>
+              </div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-icon-box critical"><i class="fa-solid fa-triangle-exclamation"></i></div>
+              <div class="metric-info">
+                <h4>High Risk</h4>
+                <div class="metric-count" style="color: #ef4444;">151</div>
+                <div class="metric-sub">Action required</div>
+              </div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-icon-box warning"><i class="fa-solid fa-circle-exclamation"></i></div>
+              <div class="metric-info">
+                <h4>Medium Risk</h4>
+                <div class="metric-count" style="color: #f59e0b;">412</div>
+                <div class="metric-sub">Under review</div>
+              </div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-icon-box resolved"><i class="fa-solid fa-circle-check"></i></div>
+              <div class="metric-info">
+                <h4>Low Risk</h4>
+                <div class="metric-count" style="color: #10b981;">1,418</div>
+                <div class="metric-sub">On track</div>
+              </div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-icon-box delay"><i class="fa-regular fa-clock"></i></div>
+              <div class="metric-info">
+                <h4>Delay Risk</h4>
+                <div class="metric-count">298</div>
+                <div class="metric-sub">Milestone delays</div>
+              </div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-icon-box cost"><i class="fa-solid fa-coins"></i></div>
+              <div class="metric-info">
+                <h4>Cost Overrun Risk</h4>
+                <div class="metric-count">236</div>
+                <div class="metric-sub">Budget variance</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Charts Row -->
+          <div class="dashboard-grid-row">
+            <div class="dashboard-card">
+              <div class="dashboard-card-title">Risk Distribution</div>
+              <div class="donut-wrapper" id="dashboard-donut-container"></div>
+            </div>
+
+            <div class="dashboard-card">
+              <div class="dashboard-card-title">State-wise Risk</div>
+              <div id="dashboard-state-barchart"></div>
+            </div>
+
+            <div class="dashboard-card">
+              <div class="dashboard-card-title">Sector-wise Performance</div>
+              <div style="display: flex; flex-direction: column; gap: 0.85rem; margin-top: 0.5rem;">
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-size: 0.78rem; font-weight: 600; margin-bottom: 2px;">
+                    <span>Roads</span><span>78%</span>
+                  </div>
+                  <div class="progress-bar-wrap"><div class="progress-bar-fill high-risk" style="width: 78%;"></div></div>
+                </div>
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-size: 0.78rem; font-weight: 600; margin-bottom: 2px;">
+                    <span>Bridges</span><span>64%</span>
+                  </div>
+                  <div class="progress-bar-wrap"><div class="progress-bar-fill medium-risk" style="width: 64%;"></div></div>
+                </div>
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-size: 0.78rem; font-weight: 600; margin-bottom: 2px;">
+                    <span>Railways</span><span>82%</span>
+                  </div>
+                  <div class="progress-bar-wrap"><div class="progress-bar-fill low-risk" style="width: 82%;"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- High Risk Table -->
+          <div class="dashboard-card">
+            <div class="dashboard-card-header">
+              <div class="dashboard-card-title">High Risk Projects</div>
+              <a href="projects.html" class="btn-action-sm">View All Projects</a>
+            </div>
+            <div class="data-table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Project Name</th>
+                    <th>State</th>
+                    <th>Sector</th>
+                    <th>Progress</th>
+                    <th>Risk Score</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="dashboard-high-risk-table-body"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/charts.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
